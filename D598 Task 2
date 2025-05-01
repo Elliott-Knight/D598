@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+import pandas as pd
+df = pd.read_excel(r"C:\WGUD598\D598 Data Set.xlsx")
+
+#Instruction: Identify duplicate rows
+duplicate_rows = df[df.duplicated()]
+
+duplicate_rows
